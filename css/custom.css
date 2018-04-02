@@ -1,0 +1,63 @@
+html{height: 100%; width: auto; overflow-x: hidden;}
+
+#app{}
+#app::after {content: "";clear: both;display: table;}
+
+.container{max-width:1900px; width:100%; box-sizing: border-box; padding:4%;}
+
+.webfont{font-family: 'Open Sans', sans-serif;}
+
+#appbox{color:#303030;}
+
+.launchName{font-size:4em; font-weight:800;}
+.launchLSP{text-transform: uppercase; font-size:1.2em; opacity: .5; margin-bottom:.8em;}
+.launchLSP a{text-decoration: none; color:inherit;}
+.tMinus{font-size:2em;}
+.launchTime{opacity:.6; font-size:.8em; margin-bottom:1em;}
+
+.launchMission{padding-top:.6em; font-size:2em; font-weight:800; border-top:solid #303030 2px;}
+.launchDescription{margin-bottom:1%;}
+.launchStream{margin-bottom:2em;}
+
+ul.inner{} 
+ul.inner span{font-weight:700; font-size:1.2em;}
+
+@media (min-width:320px)  {/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .launchName{font-size:2em;}
+} 
+@media (min-width:480px)  {}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+ul .inner.show {
+  /*display: block;*/
+}
+ul li {
+  margin: 1em 0;
+    
+}
+ul li a.toggle {
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: .75em;
+  border-radius: 0.15em;
+  transition: background .3s ease;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+ul li a.toggle:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
